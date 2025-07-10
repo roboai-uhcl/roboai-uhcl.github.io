@@ -11,6 +11,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.responsive-images {
+			display: flex;
+			justify-content: center;
+			gap: 80px;
+			margin-bottom: 20px;
+			flex-wrap: wrap;
+			}
+
+			.responsive-images img {
+			max-width: 200px;
+			height: auto;
+			}
+
+			.zhichao-photo {
+			max-width: 180px;
+			height: auto;
+			}
+
+			@media (max-width: 768px) {
+			.responsive-images {
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+			}
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -37,14 +66,10 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 
-						<div style="display: flex; justify-content: center; gap: 50px; margin-bottom: 20px;">
-							
-								<img src="images/UHCL.png" alt="School Logo" style="max-width: 300px; height: auto;" />
-							
-								<img src="images/RoboAI.png" alt="Lab Logo" style="max-width: 300px; height: auto;" />
-
-								<img src="images/zhichao.png" alt="Zhichao Photo" style="max-width: 200px; height: 200px;" />
-							
+						<div class="responsive-images">
+							<img src="images/UHCL.png" alt="School Logo" />
+							<img src="images/RoboAI.png" alt="Lab Logo" />
+							<img src="images/zhichao.png" alt="Zhichao Photo" class="zhichao-photo" />
 						</div>
 
 						<div class="inner">
