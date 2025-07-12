@@ -518,63 +518,35 @@
 							<p>The RoboAI Lab offers research opportunities for both undergraduate and graduate students on a rolling basis. If you're interested in getting involved or have any questions or comments, feel free to reach out to us.</p>
 							<div class="split style1">
 								<section>
-									<form method="POST" action="https://formspree.io/f/mzzgnvye" id="contactForm">
+									<form method="POST" action="https://formspree.io/f/mzzgnvye">
 										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" required />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="email" name="email" id="email" required />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5" required></textarea>
-											</div>
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" required />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5" required></textarea>
+										</div>
 										</div>
 
 										<!-- Honeypot Field (hidden from humans, bots may fill it) -->
 										<div style="display: none;">
-											<label for="website">Leave this field empty</label>
-											<input type="text" name="_gotcha" id="website" />
+										<label for="website">Leave this field empty</label>
+										<input type="text" name="_gotcha" id="website" />
 										</div>
-
-										<!-- Google reCAPTCHA -->
-										<div class="g-recaptcha" 
-											data-sitekey="6LdxIX8rAAAAAAeDoZ5hvl5NfcxZITfEf897aiIE" 
-											data-callback="enableSubmit">
-										</div>
-										<br>
-
-										<!-- Submit Button -->
+										
+										<div class="g-recaptcha" data-sitekey="6LdxIX8rAAAAAAeDoZ5hvl5NfcxZITfEf897aiIE"></div> <br>
+										
 										<ul class="actions">
-											<li>
-												<button type="submit" class="button submit" id="submitBtn" disabled>
-													Send Message
-												</button>
-											</li>
-										</ul>
-									</form>
-
-									<script>
-										function enableSubmit() {
-											document.getElementById('submitBtn').disabled = false;
-										}
-
-										document.getElementById('contactForm').addEventListener('submit', function (event) {
-											const name = document.getElementById('name').value.trim();
-											const email = document.getElementById('email').value.trim();
-											const message = document.getElementById('message').value.trim();
-
-											if (!name || !email || !message) {
-												alert('Please fill in all required fields.');
-												event.preventDefault(); // Stop form submission
-											}
-										});
-									</script>
-								</section>
-
+											<li><button type="submit" class="button submit">Send Message</button></li>
+											</ul>
+											
+									</section>
 
 								<section>
 									<ul class="contact">
