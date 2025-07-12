@@ -518,7 +518,7 @@
 							<p>The RoboAI Lab offers research opportunities for both undergraduate and graduate students on a rolling basis. If you're interested in getting involved or have any questions or comments, feel free to reach out to us.</p>
 							<div class="split style1">
 								<section>
-									<form id="contactForm" method="POST" action="https://formspree.io/f/mzzgnvye">
+									<form method="POST" action="https://formspree.io/f/mzzgnvye">
 										<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -539,28 +539,16 @@
 										<label for="website">Leave this field empty</label>
 										<input type="text" name="_gotcha" id="website" />
 										</div>
-
+										
 										<!-- Google reCAPTCHA widget -->
-										<div class="g-recaptcha" data-sitekey="6LdxIX8rAAAAAAeDoZ5hvl5NfcxZITfEf897aiIE"></div> <br>
-
+   									    <div class="g-recaptcha" data-sitekey="6LdxIX8rAAAAAAeDoZ5hvl5NfcxZITfEf897aiIE"></div> <br>
+										
 										<ul class="actions">
-										<li><button type="submit" class="button submit">Send Message</button></li>
-										</ul>
+											<li><button type="submit" class="button submit">Send Message</button></li>
+											</ul>
 									</form>
 									</section>
-									
-									<script>
-										document.getElementById("contactForm").addEventListener("submit", function (e) {
-											const name = document.getElementById("name").value.trim();
-											const email = document.getElementById("email").value.trim();
-											const message = document.getElementById("message").value.trim();
 
-											if (!name || !email || !message) {
-											alert("Please fill out all required fields.");
-											e.preventDefault(); // Prevent form submission
-											}
-										});
-										</script>
 								<section>
 									<ul class="contact">
 										<li>
