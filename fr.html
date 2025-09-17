@@ -13,248 +13,218 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.video-container {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-top: 20px;
+				position: relative;
+				width: 100%;
+				max-width: 720px;   /* PC cap */
+				margin: 20px auto;
+				aspect-ratio: 16 / 9; /* keeps true 16:9 without padding hack */
 				}
-		  </style>
+				.video-container iframe {
+				width: 100%;
+				height: 100%;
+				border: 0;
+				}
+			.responsive-box {
+				max-width: 800px;
+				width: 90%;
+				margin: 10px auto;
+				text-align: center;
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+			}
+			.responsive-hr {
+				max-width: 800px;
+				width: 90%;
+				margin: 10px auto;
+				border: 1px solid rgb(255, 255, 255);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				Embodied Autonomy in Field Robotics
-				<nav>
-					<ul>
-						<li><a href="index.html">RoboAI Lab</a></li>
-						<li><a href="profile.html" >Dr. Liu</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			Embodied Autonomy in Field Robotics
+			<nav>
+				<ul>
+					<li><a href="index.html">RoboAI Lab</a></li>
+					<li><a href="profile.html">Dr. Liu</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<div style="text-align: center;">
-								<h3 style="border: 2px solid white; display: inline-block; padding: 0.5em 1em; margin-top: 1em;">Ongoing Projects</h3>
-								</div>
-								<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-								Coming Soon!
-								</div>
-
-								
-				<div style="text-align: center;">
-								<h3 style="border: 2px solid white; display: inline-block; padding: 0.5em 1em; margin-top: 1em;">Research Spotlights</h3>
-								</div>
-				
-				 <!-- <h2 style="text-align: center;">My YouTube Video</h2> -->
-					
-					<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/Ks1tMMtjfGg" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							<strong>Z. Liu</strong>, Z. Lu, A. Agha and K. Karydis. 
-							“Contact-Prioritized Planning of Impact-Resilient Aerial Robots with an Integrated Compliant Arm",
-							IEEE/ASME Transactions on Mechatronics, 2023 <a href="https://ieeexplore.ieee.org/document/10155260" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF): <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341">IIS-1724341</a>, 
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>,
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-19-1-2264 <br>
-									</span>
-							</div>
-						</div>
-
-						<hr style="width: 800px; margin: 10px auto; border: 1px solid rgb(255, 255, 255);">
-
-						<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/b0xU2CzQWRg" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							<strong>Z. Liu</strong> and K. Karydis. 
-							“Dynamic Modeling and Analysis of Impact-resilient MAVs under High-speed and Large-angle Collisions",
-							 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023 <a href="https://ieeexplore.ieee.org/document/10341848" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF):
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>,
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>	
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-19-1-2264 <br>
-									</span>
-							</div>
-						</div>
-
-						<hr style="width: 800px; margin: 10px auto; border: 1px solid rgb(255, 255, 255);">
-
-						<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/euO9ZnWgIko" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							<strong>Z. Liu</strong>, C. Mucchiani, K. Ye, and K. Karydis. 
-							“Safely Catching Aerial Micro-Robots in Mid-air Using an Open-Source Aerial Robot with Soft Gripper",
-							 Frontiers in Robotics and AI, 2022 <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.1030515/full" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF): <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341">IIS-1724341</a>, 
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>,
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>	
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-19-1-2264 <br>
-									</span>
-							</div>
-							</div>
-						</div>
-
-						<hr style="width: 800px; margin: 10px auto; border: 1px solid rgb(255, 255, 255);">
-
-						<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/NESFYmCYZok" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							Z. Lu, <strong>Z. Liu</strong>, M. Campbell and K. Karydis. 
-							“Online Search-based Collision-inclusive Motion Planning and Control for Impact-resilient Mobile Robots",
-							 IEEE Transactions on Robotics, 2022 <a href="https://ieeexplore.ieee.org/document/9929261" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF): 
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>	
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-18-1-2252, N00014-19-1-2264 <br>
-									</span>
-							</div>
-							</div>
-						</div>
-
-						<hr style="width: 800px; margin: 10px auto; border: 1px solid rgb(255, 255, 255);">
-
-						<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/Kp4K7T1uvrU" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							<strong>Z. Liu</strong> and K. Karydis. 
-							“Toward Impact-resilient Quadrotor Design, Collision Characterization and Recovery Control to Sustain Flight after Collisions",
-							 IEEE International Conference on Robotics and Automation (ICRA), 2021 <a href="https://ieeexplore.ieee.org/document/9561089" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF): 
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>	
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-19-1-2264 <br>
-									</span>
-							</div>
-							</div>
-						</div>
-
-						<hr style="width: 800px; margin: 10px auto; border: 1px solid rgb(255, 255, 255);">
-
-						<div class="video-container">
-						<iframe width="854" height="480" 
-								src="https://www.youtube.com/embed/S3oYebJRfA0" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
-						</iframe>
-					</div>
-					<div style="width: 800px; margin: 10px auto; text-align: center; font-family: Arial, sans-serif; font-size: 16px; ">
-						
-							Z. Lu, <strong>Z. Liu</strong>, G. Correa, and K. Karydis. 
-							“Deformation Recovery Control and Post-impact Trajectory Replanning for Collision-resilient Mobile Robots",
-							  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021 <a href="https://ieeexplore.ieee.org/document/9636276" target="_blank" style="margin-right: 0.6em;">
-										<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
-									</a><br>
-
-							<div style="text-align: left">
-							Project funded by: 
-							<span style="font-size: 0.9em; display: block; margin-left: 1em;">
-										- National Science Foundation (NSF): 
-										<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>	
-										- DEVCOM Army Research Laboratory (ARL): W911NF-18-1-0266 <br>
-										- Office of Naval Research (ONR): N00014-18-1-2252, N00014-19-1-2264 <br>
-									</span>
-							</div>
-							</div>
-						</div>
-						
-				<!-- Main -->
-				<section id="main" class="wrapper" style="text-align: center; margin: 20px auto;">
-					<ul class="actions" style="display: inline-flex; justify-content: center; align-items: center; padding: 0; margin: 0 auto;">
-						<li>
-						<a href="index.html" class="button scrolly" style="font-size: 0.5em;">Back to Home</a>
-						</li>
-					</ul>
-					</section>
-							
-
+		<div id="wrapper">
+			<div style="text-align: center;">
+				<h3 style="border: 2px solid white; display: inline-block; padding: 0.5em 1em; margin-top: 1em;">Ongoing Projects</h3>
 			</div>
-		
+			<div class="responsive-box">
+				Coming Soon!
+			</div>
+
+			<div style="text-align: center;">
+				<h3 style="border: 2px solid white; display: inline-block; padding: 0.5em 1em; margin-top: 1em;">Research Spotlights</h3>
+			</div>
+
+			<!-- Block 1 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/Ks1tMMtjfGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				<strong>Z. Liu</strong>, Z. Lu, A. Agha and K. Karydis. 
+				“Contact-Prioritized Planning of Impact-Resilient Aerial Robots with an Integrated Compliant Arm",
+				IEEE/ASME Transactions on Mechatronics, 2023 
+				<a href="https://ieeexplore.ieee.org/document/10155260" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341">IIS-1724341</a>, 
+						<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>, 
+						<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<hr class="responsive-hr">
+
+			<!-- Block 2 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/b0xU2CzQWRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				<strong>Z. Liu</strong> and K. Karydis. 
+				“Dynamic Modeling and Analysis of Impact-resilient MAVs under High-speed and Large-angle Collisions",
+				IROS, 2023 
+				<a href="https://ieeexplore.ieee.org/document/10341848" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>, 
+						<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<hr class="responsive-hr">
+
+			<!-- Block 3 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/euO9ZnWgIko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				<strong>Z. Liu</strong>, C. Mucchiani, K. Ye, and K. Karydis. 
+				“Safely Catching Aerial Micro-Robots in Mid-air Using an Open-Source Aerial Robot with Soft Gripper",
+				Frontiers in Robotics and AI, 2022 
+				<a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.1030515/full" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341">IIS-1724341</a>, 
+						<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901379">IIS-1901379</a>, 
+						<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<hr class="responsive-hr">
+
+			<!-- Block 4 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/NESFYmCYZok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				Z. Lu, <strong>Z. Liu</strong>, M. Campbell and K. Karydis. 
+				“Online Search-based Collision-inclusive Motion Planning and Control for Impact-resilient Mobile Robots",
+				IEEE Transactions on Robotics, 2022 
+				<a href="https://ieeexplore.ieee.org/document/9929261" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-18-1-2252, N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<hr class="responsive-hr">
+
+			<!-- Block 5 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/Kp4K7T1uvrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				<strong>Z. Liu</strong> and K. Karydis. 
+				“Toward Impact-resilient Quadrotor Design, Collision Characterization and Recovery Control to Sustain Flight after Collisions",
+				ICRA, 2021 
+				<a href="https://ieeexplore.ieee.org/document/9561089" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<hr class="responsive-hr">
+
+			<!-- Block 6 -->
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/S3oYebJRfA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="responsive-box">
+				Z. Lu, <strong>Z. Liu</strong>, G. Correa, and K. Karydis. 
+				“Deformation Recovery Control and Post-impact Trajectory Replanning for Collision-resilient Mobile Robots",
+				IROS, 2021 
+				<a href="https://ieeexplore.ieee.org/document/9636276" target="_blank" style="margin-right: 0.6em;">
+					<img src="images/icons-pdf.png" alt="PDF" style="width: 18px; height: 18px;" />
+				</a>
+				<div style="text-align: center">
+					Project funded by: 
+					<span style="font-size: 0.9em; display: block; margin-left: 1em;">
+						- NSF: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910087">IIS-1910087</a><br>
+						- ARL: W911NF-18-1-0266 <br>
+						- ONR: N00014-18-1-2252, N00014-19-1-2264 <br>
+					</span>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<section id="main" class="wrapper" style="text-align: center; margin: 20px auto;">
+				<ul class="actions" style="display: inline-flex; justify-content: center; align-items: center; padding: 0; margin: 0 auto;">
+					<li>
+						<a href="index.html" class="button scrolly" style="font-size: 0.8em;">Back to Home</a>
+					</li>
+				</ul>
+			</section>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
